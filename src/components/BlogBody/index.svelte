@@ -8,7 +8,8 @@
 <article class="blog-body">
 	<SvelteMarkdown
 		renderers={{
-			code: CodeComponent
+			code: CodeComponent,
+			codespan: CodeComponent
 		}}
 		{source}
 	/>

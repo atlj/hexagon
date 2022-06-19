@@ -1,5 +1,5 @@
 .blog-body {
-	@apply font-ibm md:text-xl dark:text-contrast-dark;
+	@apply font-ibm  dark:text-contrast-dark text-lg leading-7 md:leading-8 md:text-xl;
 
 	h1 {
 		@apply font-bold text-xl md:text-2xl;
@@ -15,6 +15,10 @@
 
 	a {
 		@apply text-primary-light dark:text-primary-dark;
+	}
+
+	p {
+		@apply mb-7 md:mb-8;
 	}
 
 	pre {
