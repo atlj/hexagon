@@ -16,4 +16,8 @@
 	a {
 		@apply text-primary-light dark:text-primary-dark;
 	}
+
+	pre {
+		flex-shrink: 1;
+	}
 }

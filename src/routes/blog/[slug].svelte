@@ -1,6 +1,5 @@
 <script lang="ts" context="module">
 	import type { Load } from '@sveltejs/kit';
-	import BlogBody from '@/components/BlogBody/index.svelte';
 
 	export const load: Load = async ({ params, fetch }) => {
 		const allPostsResponse = await fetch('/api/posts.json');
@@ -25,10 +24,31 @@
 
 <script lang="ts">
 	import type { PostType } from 'src/types';
+	import BlogBody from '@/components/BlogBody/index.svelte';
+	import BlogTitle from '@/components/BlogTitle/index.svelte';
+	import ReadingTime from 'reading-time/lib/reading-time';
 
 	export let post: PostType;
 </script>
 
-<div>
-	<BlogBody source={post.attributes.body} />
+<div class="blog-page">
+	<div class="blog-container">
+		<BlogTitle
+			title={post.attributes.title}
+			readingTime={ReadingTime(post.attributes.body).minutes}
+			authorName="Burak Güner"
+			date={new Date(post.attributes.postTime)}
+		/>
+		<BlogBody source={post.attributes.body} />
+	</div>
 </div>
+
+<style lang="scss">
+	.blog-page {
+		@apply items-center flex flex-col;
+	}
+
+	.blog-container {
+		@apply md:w-[623px] mx-4;
+	}
+</style>

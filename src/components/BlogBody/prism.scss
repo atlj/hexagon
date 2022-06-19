@@ -1,0 +1,103 @@
+.prism {
+	@apply bg-primary-400 text-contrast-dark rounded-md overflow-x-scroll;
+	max-width: calc(100vw - 32px);
+
+	pre {
+		@apply m-3;
+	}
+}
+
+.token.namespace {
+	opacity: 0.7;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #6f705e;
+}
+
+.token.operator,
+.token.boolean,
+.token.number {
+	color: #a77afe;
+}
+
+.token.attr-name,
+.token.string {
+	color: #e6d06c;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #e6d06c;
+}
+
+.token.selector,
+.token.inserted {
+	color: #a6e22d;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword,
+.token.important,
+.token.deleted {
+	color: #ef3b7d;
+}
+
+.token.regex,
+.token.statement {
+	color: #76d9e6;
+}
+
+.token.placeholder,
+.token.variable {
+	color: #fff;
+}
+
+.token.important,
+.token.statement,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.punctuation {
+	color: #bebec5;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+code.language-markup {
+	color: #f9f9f9;
+}
+
+code.language-markup .token.tag {
+	color: #ef3b7d;
+}
+
+code.language-markup .token.attr-name {
+	color: #a6e22d;
+}
+
+code.language-markup .token.attr-value {
+	color: #e6d06c;
+}
+
+code.language-markup .token.style,
+code.language-markup .token.script {
+	color: #76d9e6;
+}
+
+code.language-markup .token.script .token.keyword {
+	color: #76d9e6;
+}
