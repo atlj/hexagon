@@ -9,7 +9,7 @@
 	<h1>
 		{title}
 	</h1>
-	<div class="blog-title__second-row">
+	<div class="second-row">
 		<div>
 			{authorName}{' | '}{readingTime.toFixed(0)} dakika
 		</div>
@@ -27,7 +27,7 @@
 			@apply font-bold text-xl text-contrast-light md:text-2xl dark:text-contrast-dark;
 		}
 
-		&__second-row {
+		.second-row {
 			@apply flex justify-between text-sm text-contrast-light40 md:text-base dark:text-contrast-dark40;
 		}
 	}
