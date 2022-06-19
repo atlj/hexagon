@@ -33,6 +33,7 @@
 
 <div class="blog-page">
 	<div class="blog-container">
+		<img class="blog-container__image" src={post.attributes.coverUrl} />
 		<BlogTitle
 			title={post.attributes.title}
 			readingTime={ReadingTime(post.attributes.body).minutes}
@@ -50,5 +51,9 @@
 
 	.blog-container {
 		@apply md:w-[623px] mx-4;
+
+		&__image {
+			@apply w-full h-auto rounded-xl mb-8 md:mb-9;
+		}
 	}
 </style>

@@ -6,5 +6,7 @@ export type PostType = {
 		author: string;
 		postTime: string;
 		body: string;
+		coverUrl: string;
+		coverSmallUrl: string;
 	};
 };

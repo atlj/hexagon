@@ -5,7 +5,7 @@
 	export let date: Date;
 </script>
 
-<div class="blog-title">
+<div class={'blog-title'}>
 	<h1>
 		{title}
 	</h1>
@@ -21,7 +21,7 @@
 
 <style lang="scss">
 	.blog-title {
-		@apply flex flex-col gap-2;
+		@apply flex flex-col gap-2 mb-6 md:mb-10;
 
 		h1 {
 			@apply font-bold text-xl text-contrast-light md:text-2xl dark:text-contrast-dark;
