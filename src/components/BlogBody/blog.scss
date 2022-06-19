@@ -1,0 +1,19 @@
+.blog-body {
+	@apply font-ibm md:text-xl dark:text-contrast-dark;
+
+	h1 {
+		@apply font-bold text-xl md:text-2xl;
+	}
+
+	h2 {
+		@apply font-bold text-lg md:text-xl;
+	}
+
+	h3 {
+		@apply font-semibold md:text-lg;
+	}
+
+	a {
+		@apply text-primary-light dark:text-primary-dark;
+	}
+}

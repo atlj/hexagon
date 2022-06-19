@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
 	import type { Load } from '@sveltejs/kit';
+	import BlogBody from '@/components/BlogBody/index.svelte';
 
 	export const load: Load = async ({ params, fetch }) => {
 		const allPostsResponse = await fetch('/api/posts.json');
@@ -28,4 +29,6 @@
 	export let post: PostType;
 </script>
 
-<h1>{post.attributes.body}</h1>
+<div>
+	<BlogBody source={post.attributes.body} />
+</div>
