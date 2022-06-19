@@ -15,8 +15,8 @@
 	</div>
 {/if}
 
-<style>
-	.nonPrism {
-		white-space: pre-wrap;
+<style lang="scss">
+	.non-prism {
+		@apply bg-gray-200  rounded-md p-px;
 	}
 </style>
