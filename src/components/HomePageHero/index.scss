@@ -1,0 +1,19 @@
+.hero {
+	@apply flex flex-col gap-3 text-contrast-light dark:text-contrast-dark font-mono md:text-lg;
+
+	&__name {
+		@apply flex flex-col text-lg md:text-2xl font-semibold md:gap-2;
+
+		&--title {
+			@apply text-contrast-light80 dark:text-contrast-dark80 font-normal text-sm md:text-lg;
+		}
+	}
+
+	&__links {
+		@apply gap-1;
+
+		a {
+			@apply underline font-medium;
+		}
+	}
+}
