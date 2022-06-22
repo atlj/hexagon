@@ -2,6 +2,7 @@
 	import '../style/index.scss';
 	import { theme } from '@/store/theme.svelte';
 	import { onMount } from 'svelte';
+	import Header from '@/components/Header/index.svelte';
 
 	onMount(() => {
 		theme.subscribe((value) => {
@@ -14,15 +15,12 @@
 				body.style.backgroundColor = 'white';
 			}
 		});
-
-		theme.subscribe(function writeToLocalStorage(newValue) {
-			localStorage.setItem('theme', newValue);
-		});
 	});
 </script>
 
 <svelte:head />
 
 <div>
+	<Header />
 	<slot />
 </div>

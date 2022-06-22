@@ -48,7 +48,7 @@
 
 <style lang="scss">
 	.blog-page {
-		@apply items-center flex flex-col;
+		@apply items-center flex flex-col mt-6 md:mt-8;
 	}
 
 	.blog-container {
