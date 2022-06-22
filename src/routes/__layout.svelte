@@ -1,6 +1,6 @@
 <script>
 	import '../style/index.scss';
-	import { theme } from '@/store/theme.svelte';
+	import { theme } from '@/store/theme';
 	import { onMount } from 'svelte';
 	import Header from '@/components/Header/index.svelte';
 

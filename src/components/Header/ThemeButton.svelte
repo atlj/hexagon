@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { theme } from '@/store/theme.svelte';
+	import { theme } from '@/store/theme';
 
 	function toggleTheme() {
 		theme.update((current) => (current === 'dark' ? 'light' : 'dark'));
