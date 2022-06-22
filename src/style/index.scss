@@ -6,4 +6,10 @@ body {
 	background-color: #1c1a1d;
 
 	transition: background-color 250ms;
+
+	@apply text-contrast-light dark:text-contrast-dark;
+}
+
+.error {
+	@apply flex-1 flex text-contrast-light dark:text-contrast-dark text-4xl md:text-5xl font-mono text-center items-center justify-center;
 }
