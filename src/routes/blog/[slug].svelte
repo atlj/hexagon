@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
 	import type { Load } from '@sveltejs/kit';
+	import { getReadingTime } from '@/utils/readingTime';
 
 	export const load: Load = async ({ params, fetch }) => {
 		const allPostsResponse = await fetch('/api/posts.json');
@@ -12,7 +13,8 @@
 			return {
 				status: 200,
 				props: {
-					post: allPosts[postIndex]
+					post: allPosts[postIndex],
+					readingTime: getReadingTime(allPosts[postIndex].attributes.body)
 				}
 			};
 
@@ -26,9 +28,9 @@
 	import type { PostType } from 'src/types';
 	import BlogBody from '@/components/BlogBody/index.svelte';
 	import BlogTitle from '@/components/BlogTitle/index.svelte';
-	import ReadingTime from 'reading-time/lib/reading-time';
 
 	export let post: PostType;
+	export let readingTime: number;
 </script>
 
 <div class="blog-page">
@@ -36,7 +38,7 @@
 		<img class="blog-container__image" src={post.attributes.coverUrl} />
 		<BlogTitle
 			title={post.attributes.title}
-			readingTime={ReadingTime(post.attributes.body).minutes}
+			{readingTime}
 			authorName="Burak Güner"
 			date={new Date(post.attributes.postTime)}
 		/>

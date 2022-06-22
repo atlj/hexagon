@@ -28,7 +28,6 @@
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",
 		"prismjs": "^1.28.0",
-		"reading-time": "^1.5.0",
 		"sass": "^1.52.3",
 		"svelte": "^3.44.0",
 		"svelte-check": "^2.2.6",
