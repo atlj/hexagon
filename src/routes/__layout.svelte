@@ -3,6 +3,7 @@
 	import { theme } from '@/store/theme';
 	import { onMount } from 'svelte';
 	import Header from '@/components/Header/index.svelte';
+	import { browser } from '$app/env';
 
 	onMount(() => {
 		theme.subscribe((value) => {
@@ -18,7 +19,11 @@
 	});
 </script>
 
-<svelte:head />
+<svelte:head>
+	{#if browser && import.meta.env.VITE_UMAMI_SCRIPT}
+		{@html import.meta.env.VITE_UMAMI_SCRIPT}
+	{/if}
+</svelte:head>
 
 <div class="app">
 	<Header />
