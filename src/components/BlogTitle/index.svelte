@@ -11,7 +11,7 @@
 	</h1>
 	<div class="second-row">
 		<div>
-			{authorName}{' | '}{readingTime.toFixed(0)} dakika
+			{authorName}{' | '}{readingTime.toFixed(0)} min read
 		</div>
 		<div>
 			{date.toDateString()}
