@@ -14,3 +14,7 @@
 		@apply mt-2 text-contrast-light40 dark:text-contrast-dark40 text-xs md:text-base;
 	}
 }
+
+.post:hover {
+	@apply underline;
+}
