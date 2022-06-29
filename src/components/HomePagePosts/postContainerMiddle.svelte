@@ -15,5 +15,7 @@
 			<Post {post} />
 		{/each}
 	</div>
-	<ChevronDown onClick={scroll} />
+	{#if posts.length > 5}
+		<ChevronDown onClick={scroll} />
+	{/if}
 </div>
