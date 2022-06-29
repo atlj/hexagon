@@ -23,6 +23,5 @@
 			>
 		</p>
 		<p>or just <span><a href="mailto:md.burak.guner@gmail.com">mail</a></span> me</p>
-		<p>check the test <span><a href="/blog/test">blog post</a></span></p>
 	</div>
 </section>
