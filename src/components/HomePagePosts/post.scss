@@ -1,0 +1,16 @@
+.post {
+	@apply text-start font-normal flex items-center gap-5;
+	scroll-snap-align: start;
+
+	&__thumbnail {
+		@apply w-[70px] h-[70px] rounded-md md:w-20 md:h-20;
+	}
+
+	&__title {
+		@apply text-contrast-light md:text-xl  dark:text-contrast-dark;
+	}
+
+	&__detail {
+		@apply mt-2 text-contrast-light40 dark:text-contrast-dark40 text-xs md:text-base;
+	}
+}
