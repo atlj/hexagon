@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { PostType } from '@/types';
-	import PostContainerMobile from './PostContainerMobile.svelte';
+	import PostContainerMobile from './postContainerMobile.svelte';
 	import './index.scss';
 	import PostContainerMiddle from './postContainerMiddle.svelte';
 
