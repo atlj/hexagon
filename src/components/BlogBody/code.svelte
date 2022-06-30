@@ -1,7 +1,7 @@
 <script lang="ts">
 	import prism from 'prismjs';
 	import './prism.scss';
-	export let lang: string | undefined;
+	export let lang: undefined | string = undefined;
 	export let text: string;
 </script>
 

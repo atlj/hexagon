@@ -22,12 +22,21 @@
 	import Hero from '@/components/HomePageHero/index.svelte';
 	import Posts from '@/components/HomePagePosts/index.svelte';
 	import Divider from '@/components/Divider/index.svelte';
+	import HeadMetaData from '@/components/HeadMetaData/index.svelte';
 	import type { PostType } from '@/types';
 
 	import type { Load } from '@sveltejs/kit';
 
 	export let posts: PostType[];
 </script>
+
+<svelte:head>
+	<HeadMetaData
+		title="Burak Güner"
+		description="Frontend Software Dev"
+		imageUrl={'https://i.imgur.com/u4RqmTJ.png'}
+	/>
+</svelte:head>
 
 <div class="home">
 	<Hero />

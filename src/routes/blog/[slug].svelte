@@ -28,10 +28,19 @@
 	import type { PostType } from 'src/types';
 	import BlogBody from '@/components/BlogBody/index.svelte';
 	import BlogTitle from '@/components/BlogTitle/index.svelte';
+	import HeadMetaData from '@/components/HeadMetaData/index.svelte';
 
 	export let post: PostType;
 	export let readingTime: number;
 </script>
+
+<svelte:head>
+	<HeadMetaData
+		title={post.attributes.title}
+		description="Blog Post"
+		imageUrl={post.attributes.coverUrl}
+	/>
+</svelte:head>
 
 <div class="blog-page">
 	<div class="blog-container">
