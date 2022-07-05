@@ -1,8 +1,18 @@
 <script lang="ts" context="module">
 	import type { Load } from '@sveltejs/kit';
 	import { getReadingTime } from '@/utils/readingTime';
+	import { testPost } from '@/utils/test';
 
 	export const load: Load = async ({ params, fetch }) => {
+		if (params.slug === 'test')
+			return {
+				props: {
+					post: testPost,
+					readingTime: 3
+				},
+				status: 200
+			};
+
 		const allPostsResponse = await fetch('/api/posts.json');
 
 		const allPosts: PostType[] = await allPostsResponse.json();
