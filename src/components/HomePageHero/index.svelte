@@ -5,7 +5,7 @@
 <section class="hero">
 	<div class="hero__name">
 		burak guner
-		<span class="hero__name--title"> FRONTEND DEV </span>
+		<span class="hero__name--title"> SOFTWARE DEV </span>
 	</div>
 	<div class="hero__links">
 		<p>
